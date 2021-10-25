@@ -1,7 +1,8 @@
 # RickAndMortyCorutine
 ```
-Just a simple api-listing app with some libraries.
+Just a simple api-listing app with coroutines.
 ```
+![Rick MortyGitHeader](https://user-images.githubusercontent.com/26333702/138735670-390c9a1b-cfb1-42b8-b2e0-28da386a44ad.jpg)
 
 ## Authors
 
