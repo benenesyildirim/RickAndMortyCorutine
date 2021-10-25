@@ -1,7 +1,5 @@
 package com.rickmorty.corutine.models
 
-import java.io.Serializable
-
 data class CharacterModel(
     val name: String?,
     val status: String?,
@@ -9,4 +7,4 @@ data class CharacterModel(
     val type: String?,
     val gender: String?,
     val image: String?
-): Serializable
+)

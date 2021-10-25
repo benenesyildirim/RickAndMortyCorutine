@@ -9,7 +9,9 @@ import com.google.gson.Gson
 import com.rickmorty.corutine.CharacterListAdapter
 import com.rickmorty.corutine.api.RetrofitController
 import com.rickmorty.corutine.databinding.ActivityMainBinding
+import com.rickmorty.corutine.models.CharacterResult
 import kotlinx.coroutines.*
+import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -25,17 +27,22 @@ class MainActivity : AppCompatActivity() {
 
             withContext(Dispatchers.Main) {
                 if (response.isSuccessful) {
-                    binding.characterListRv.adapter =
-                        CharacterListAdapter(response.body()!!.results, this@MainActivity) {
-                            val intent =
-                                Intent(this@MainActivity, CharacterDetailActivity::class.java)
-                            intent.putExtra("characterDetail",Gson().toJson(it))
-                            this@MainActivity.startActivity(intent)
-                        }
+                    setAdapter(response)
+
                     delay(3000L)
                     binding.rickLoadingGif.visibility = GONE
                 }
             }
         }
+    }
+
+    private fun setAdapter(response: Response<CharacterResult>) {
+        binding.characterListRv.adapter =
+            CharacterListAdapter(response.body()!!.results) {
+                val intent =
+                    Intent(this@MainActivity, CharacterDetailActivity::class.java)
+                intent.putExtra("characterDetail", Gson().toJson(it))
+                this@MainActivity.startActivity(intent)
+            }
     }
 }

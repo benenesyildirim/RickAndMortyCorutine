@@ -18,10 +18,17 @@ class CharacterDetailActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val characterJson = intent.getStringExtra("characterDetail")
-        character = Gson().fromJson(characterJson,CharacterModel::class.java)
-        binding.character = character
+        bindCharacter()
+        setCharacterImage()
+    }
 
+    private fun bindCharacter() {
+        val characterJson = intent.getStringExtra("characterDetail")
+        character = Gson().fromJson(characterJson, CharacterModel::class.java)
+        binding.character = character
+    }
+
+    private fun setCharacterImage() {
         Glide.with(binding.characterImageDetail)
             .load(character.image)
             .placeholder(R.drawable.coming_soon)
