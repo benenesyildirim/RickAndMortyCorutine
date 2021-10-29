@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Activities.CharacterDetailActivity">
+    tools:context="com.rickmorty.coroutine.Activities.CharacterDetailActivity">
 
     <data>
 
         <variable
             name="character"
-            type="com.rickmorty.corutine.models.CharacterModel" />
+            type="com.rickmorty.coroutine.models.CharacterModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

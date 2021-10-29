@@ -1,12 +1,13 @@
-package com.rickmorty.corutine
+package com.rickmorty.coroutine
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.rickmorty.corutine.CharacterListAdapter.ViewHolder
+import com.rickmorty.coroutine.CharacterListAdapter.ViewHolder
+import com.rickmorty.corutine.R
 import com.rickmorty.corutine.databinding.CharactersListDesignBinding
-import com.rickmorty.corutine.models.CharacterModel
+import com.rickmorty.coroutine.models.CharacterModel
 
 class CharacterListAdapter(
     private val characters: List<CharacterModel>, val listener: (CharacterModel) -> Unit

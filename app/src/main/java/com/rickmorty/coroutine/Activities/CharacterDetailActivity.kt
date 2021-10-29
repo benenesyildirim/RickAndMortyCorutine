@@ -1,4 +1,4 @@
-package com.rickmorty.corutine.Activities
+package com.rickmorty.coroutine.Activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import com.bumptech.glide.Glide
 import com.google.gson.Gson
 import com.rickmorty.corutine.R
 import com.rickmorty.corutine.databinding.ActivityCharacterDetailBinding
-import com.rickmorty.corutine.models.CharacterModel
+import com.rickmorty.coroutine.models.CharacterModel
 
 class CharacterDetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCharacterDetailBinding

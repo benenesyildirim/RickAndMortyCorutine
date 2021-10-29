@@ -13,10 +13,10 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".Activities.CharacterDetailActivity"
+            android:name="com.rickmorty.coroutine.Activities.CharacterDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.MainActivity"
+            android:name="com.rickmorty.coroutine.Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,6 +1,6 @@
-package com.rickmorty.corutine.api
+package com.rickmorty.coroutine.api
 
-import com.rickmorty.corutine.models.CharacterResult
+import com.rickmorty.coroutine.models.CharacterResult
 import retrofit2.Response
 import retrofit2.http.GET
 

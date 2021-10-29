@@ -1,4 +1,4 @@
-package com.rickmorty.corutine.Activities
+package com.rickmorty.coroutine.Activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,10 +6,10 @@ import android.view.View.GONE
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.gson.Gson
-import com.rickmorty.corutine.CharacterListAdapter
-import com.rickmorty.corutine.api.RetrofitController
+import com.rickmorty.coroutine.CharacterListAdapter
+import com.rickmorty.coroutine.api.RetrofitController
 import com.rickmorty.corutine.databinding.ActivityMainBinding
-import com.rickmorty.corutine.models.CharacterResult
+import com.rickmorty.coroutine.models.CharacterResult
 import kotlinx.coroutines.*
 import retrofit2.Response
 

@@ -1,4 +1,4 @@
-package com.rickmorty.corutine.api
+package com.rickmorty.coroutine.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

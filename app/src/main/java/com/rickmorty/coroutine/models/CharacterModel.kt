@@ -1,4 +1,4 @@
-package com.rickmorty.corutine.models
+package com.rickmorty.coroutine.models
 
 data class CharacterModel(
     val name: String?,
